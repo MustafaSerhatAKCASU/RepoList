@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/tv_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toEndOf="@id/iv_avatar"
+                app:layout_constraintTop_toTopOf="@id/iv_avatar"
+                tools:text="@string/owner" />
+
+            <TextView
+                android:id="@+id/tv_stars_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/stars"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_avatar" />
+
+            <TextView
+                android:id="@+id/tv_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toEndOf="@id/tv_stars_label"
+                app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+                tools:text="178" />
+
+            <TextView
+                android:id="@+id/tv_open_issues_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/open_issues"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_stars_label" />
+
+            <TextView
+                android:id="@+id/tv_open_issues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toEndOf="@id/tv_open_issues_label"
+                app:layout_constraintTop_toBottomOf="@id/tv_stars_label"
+                tools:text="3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

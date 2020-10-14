@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RepoList</string>
+    <string name="username">Username</string>
+    <string name="submit">Submit</string>
+    <string name="owner">Owner</string>
+    <string name="stars">Stars: </string>
+    <string name="open_issues">Open Issues: </string>
+
+    <string name="show_progress">Show progress</string>
+    <string name="show_content">Show content</string>
+    <string name="show_error">Show error</string>
+    <string name="show_empty">Show empty</string>
+    <string name="text_sample">Sample Text</string>
+    <string name="sample_normal">Normal Sample</string>
+    <string name="sample_recycler_view">RecyclerView Sample</string>
+    <string name="try_again">Try Again</string>
+    <string name="empty">Content not found</string>
+    <string name="loadingType">Loading...</string>
+    <string name="favorite">Favorite</string>
+</resources>
