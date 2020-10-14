@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 /.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/jarRepositories.xml
+/.idea/gradle.xml
+/.idea/compiler.xml
+/.idea/.gitignore
